@@ -1,6 +1,6 @@
 defmodule Secrets do
   def secret_add(secret) do
-    fn param -> param + secret end
+    adder = fn param -> param + secret end
   end
 
   def secret_subtract(secret) do
